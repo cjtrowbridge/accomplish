@@ -8,12 +8,55 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<!--Agrogator Includes-->
+		<script src="https://www.google.com/jsapi"></script>
+		<script src="https://cjtrowbridge.com/agrogator/js/agrogator-1.0.js"></script>
+		<link rel="stylesheet" href="https://cjtrowbridge.com/agrogator/css/default-theme.css">
   </head>
   <body>
     <div class="container">
       <div class="row">
+        &nbsp;
+      </div>
+      <div class="row">
         <div class="col-xs-12 col-md-4">
-          side column
+          <div class="agrogator_container">
+						<h3>
+							<i class="material-icons agrogate_refresh" onclick="Agrogate();">cached</i>
+							Dev News
+						</h3>
+						<div class="agrogator">
+							<span class="agrogator_enclosure" data-uri="http://stallman.org/rss/rss.xml"></span>
+							<span class="agrogator_enclosure" data-uri="https://news.ycombinator.com/rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/web_design/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/Entrepreneur/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/HowToHack/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/programming/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/sysadmin/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/Futurology/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://devstash.io/trending.atom"></span>
+							<div class="agrogator_container"></div>
+						</div>
+					</div>
+					<div class="agrogator_container">
+						<h3>
+							<i class="material-icons agrogate_refresh" onclick="Agrogate();">cached</i>
+							Investment News
+						</h3>
+						
+						<div class="agrogator">
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/daytrading/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/Finance/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/StockMarket/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/wallstreetbets/.rss"></span>
+							<span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/algotrading/.rss"></span>
+							<div class="agrogator_container"></div>
+						</div>
+					</div>
         </div>
         <div class="col-xs-12 col-md-8">
           main column
