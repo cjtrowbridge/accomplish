@@ -8,3 +8,5 @@ This project will feature a grid system with two columns.
 The first, smaller column will show several RSS feeds aggregated by my other project "Agrogator" which is on my Github profile if you want to check it out. 
 
 The larger column will show several lists of goals, delineated by time-horizon and seperated into columns by broad categories.
+
+[Live Preview](https://cjtrowbridge.com/accomplish)
