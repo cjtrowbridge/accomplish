@@ -9,4 +9,4 @@ The first, smaller column will show several RSS feeds aggregated by my other pro
 
 The larger column will show several lists of goals, delineated by time-horizon and seperated into columns by broad categories.
 
-[Live Preview](https://cjtrowbridge.com/accomplish)
+[Live Preview](https://accomplish.cjtrowbridge.com/)
