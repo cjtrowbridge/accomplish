@@ -6,6 +6,16 @@ li.complete{
 	display: none;
 }
 
+shh{
+	display: none;
+}
+h1:hover shh,
+h2:hover shh,
+h3:hover shh,
+h4:hover shh{
+	display: inline;
+}
+
 .agrogator{
 	height: 400px;
 	overflow: scroll;
