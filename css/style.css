@@ -1,9 +1,11 @@
 body{
 	font-size: .7rem;
 }
-h1{
-	1rem;
+li.complete{
+	text-decoration: line-through;
+	display: none;
 }
+
 .agrogator{
 	height: 400px;
 	overflow: scroll;
