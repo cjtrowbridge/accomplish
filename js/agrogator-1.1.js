@@ -17,7 +17,11 @@ function Agrogate(){
 						date = Math.floor(date / 1000);
 						var story="<div class=\"story_container\" data-pubdate=\""+date+"\"><b><a href=\""+entry.link+"\" target=\"_blank\">"+strip_tags(entry.title)+"</a></b>\n <i>"+strip_tags(result.feed.title)+"</i>\n ";
 						
-						if(!(entry.contentSnippet == 'Comments')){
+						if(!(
+							(entry.contentSnippet == 'Comments')||
+							(str.includes("submitted by"))
+
+						)){
 							story = story + "<p>"+strip_tags(entry.contentSnippet)+"</p>";
 						}
 						
