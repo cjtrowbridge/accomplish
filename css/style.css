@@ -33,3 +33,6 @@ h4:hover shh{
 .story_container p{
 	color: #c7c7c7;	
 }
+.story_container i{
+	display: block;
+}
