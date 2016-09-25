@@ -19,7 +19,7 @@ function Agrogate(){
 						
 						if(!(
 							(entry.contentSnippet == 'Comments')||
-							(str.includes("submitted by"))
+							(entry.contentSnippet.includes("submitted by"))
 
 						)){
 							story = story + "<p>"+strip_tags(entry.contentSnippet)+"</p>";
