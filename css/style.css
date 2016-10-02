@@ -36,3 +36,6 @@ h4:hover shh{
 .story_container i{
 	display: block;
 }
+.news{
+	display: none;
+}
