@@ -1,0 +1,19 @@
+body{
+  padding-top: 2em;
+  font-size: 14px;
+}
+.complete,
+.canceled,
+shh{
+  display: none;
+}
+.complete{
+  color: green;
+}
+.canceled{
+  color: red;	
+}
+h1:hover shh,
+h3:hover shh{
+  display: inline;
+}
