@@ -1,249 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Accomplish</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-		
-		<!--Google Fonts-->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		
-		<link rel="icon" type="image/jpg" href="https://cjtrowbridge.com/cj.jpg">
-		<style>
-			body{
-				padding-top: 2em;
-				font-size: 14px;
-			}
-			.complete,
-			.canceled,
-			shh{
-				display: none;
-			}
-			.complete{
-				color: green;
-			}
-			.canceled{
-				color: red;	
-			}
-			h1:hover shh,
-			h3:hover shh{
-				display: inline;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12">
-					<h3>
-						Accomplish
-						<shh><a href="javascript:void(0);" style="text-size: 1rem;" onclick="$('.complete').slideToggle();"><i class="material-icons" title="Show Completed">done</i></a></shh>
-						<shh><a href="javascript:void(0);" style="text-size: 1rem;" onclick="$('.canceled').slideToggle();"><i class="material-icons" title="Show Canceled">clear</i></a></shh>
-					</h3>
-					<hr>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-3">
-					<h4>This/Each Week</h4>
-					<ul>
-						<li>Advance on <a href="https://www.hackerrank.com/domains" target="_blank">HackerRank</a></li>
-						<li>Read <a href="https://news.ycombinator.com/" target="_blank">Hacker News</a></li>
-						<li>Read <a href="https://www.indiehackers.com/businesses" target="_blank">Indie Hackers</a></li>
-						<li>Earn a quarter of my money freelancing</li>
-						<li>Eat Less, Eat Better, Drink More Water</li>
-						<li>Yoga</li>
-						<li>Watch a <a href="https://www.reddit.com/r/Documentaries/">documentary</a></li>
-						<li>Journal about goals each week</li>
-						<li>Blog post about each major area of focus
-							<ul>
-								<li>Investment</li>
-								<li>Book Reviews</li>
-								<li>Development</li>
-							</ul>
-						</li>
-						
-						
-						<!--complete-->
-						<li>Stay up on <a href="https://medium.com" target="_blank">Medium</a> and contribute regularly</li>
-						<li>Earn a quarter of my money with Ridesharing</li>
-						<li class="complete">Start learning <a href="https://www.reddit.com/r/pentesting/">Pentesting</a> with new raspberry pi</li>
-						<li class="complete">Get rid of all the stuff ive been trying to sell
-							<ul>
-								<li class="complete">Ford Escape</li>
-								<li class="canceled">PS Controller</li>
-								<li class="complete">Thinkpad</li>
-								<li class="complete">Surface</li>
-								<li class="canceled">Nexus 7</li>
-							</ul>
-						</li>
-						<li class="complete">Stay up on stock and financial news</li>
-						
-						<!--canceled-->
-						<li class="canceled">Advance on <a href="https://www.khanacademy.org/mission/algebra-basics" target="_blank">Khan Academy</a></li>
-						<li class="canceled">Learn
-							<ul>
-								<li>Theban</li>
-								<li>Enochian</li>
-							</ul>
-						</li>
-            					<li class="canceled">Get <a href="http://forum.xda-developers.com/showthread.php?t=1516778" target="_blank">ubuntu</a> running on Droid 4</li>
-						<li class="canceled">Get Marshmallow <a href="http://forum.xda-developers.com/nexus-7/development/rom-6-0-android-marshmallow-pure-aosp-t3226012">running</a> on Nexus 7</li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-3">
-					<h4>This/Each Month</h4>
-					<ul>
-						<li>Read a book each month</li>
-						<li>
-							Volunteer
-							<ul>
-								<li>Stand Up Placer</li>
-							</ul>
-						</li>
-						<li>Play <a href="https://www.chesscademy.com/">Chess</a></li>
-						<li>Learn a new <a href="https://medium.com/marketing-and-entrepreneurship/21-best-places-to-learn-new-skills-every-day-722fdaf7530c#.peg4gey2d" target="_blank">skill</a></li>
-						<li>Try a new <a href="https://en.wikipedia.org/wiki/List_of_hobbies">hobby</a></li>
-						<li>Kayaking</li>
-						
-						
-						
-						<!--Completed-->
-						<li class="complete">Earn enough with ridesharing to pay tuition</li>
-						<li class="complete">Take sailing lessons</li>
-						<li class="complete">Buy a new <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16834234023" target="_blank">laptop</a></li>
-						<li class="complete">Complete <a href="https://trowbridge.house">Trowbridge.House</a> site</li>
-						
-						<!--canceled-->
-						<li class="canceled">Get a new <a href="http://sacramento.craigslist.org/search/sss?query=kayak&sort=rel&min_price=20&max_price=200" target="_blank">kayak</a></li>
-						<li class="canceled">
-							Volunteer
-							<ul>
-								<li>Maybe do a startup or b-corp</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-3">
-					<h4>This Year</h4>
-					<ul>
-						 <li><b>Complete Undergrad</b></li>
-						 <li>Become profitable with the fscrm platform</li>
-						 <li><a href="https://hackr.io/" target="_blank">Learn More Programming Languages/Frameworks</a>
-							<ul>
-								<li>C++</li>
-								<li>C#</li>
-								<li>Angular</li>
-								<li>Node</li>
-								<li>Python</li>
-							</ul>
-						</li>
-						<li>
-							Start a profitable new business
-							<ul>
-								<li>Mobile food sales</li>
-								<li>Throw fundraiser events for worthy causes</li>
-								
-							</ul>
-						</li>
-						<li>More Amateur Radio</li>
-						<li>More Sailing</li>
-						<li>Build a tiny home</li>
-						<li>Maintain a buffer of six months of resources</li>
-						<li>Use machine learning to solve a problem</li>
-						<li>Use machine learning to make money</li>
-           					<li><a href="http://www.seabreeze.com.au/forums/Land-Yacht-Sailing/Construction/Lake-Lefroy-Mini-landyacht-register/?page=1" target="_blank">Land Sailing</a></li>
-						<li>Learn Achery</li>
-						<li>Learn to shoot</li>
-						<li>Learn to Fly</li>
-						<li>Learn The Constellations</li>
-					</ul>
-          
-					<ul class="complete">
-						<li>Double my net monthly income from $1800 to $3640</li>
-						<li>At least half of that new income should be from new sources: $910/mo.
-							<ul>
-								<li>Lyft/Uber: $200/wk</li>
-								<li><a href="https://www.upwork.com/ab/find-work/" target="_blank">Upwork</a>: $200/wk</li>
-								<li>DJ CJ</li>
-							</ul>
-						</li>
-						<li>Take a discovery flight</li>
-						<li>More Scuba</li>
-						<li>Practice Languages
-							<ul>
-								<li>German</li>
-								<li>Japanese</li>
-								<li>French</li>
-								<li>Spanish</li>
-								<li>ASL</li>
-							</ul>
-						</li>
-					</ul>
-					<!--h4>Next Year</h4>
-					<ul>
-						
-					</ul-->
-					<hr class="canceled">
-					<ul>
-            					<li class="canceled">Rent out spare cpu/gpu cycles as compute</li>
-						<li class="canceled">Learn More Languages
-							<ul>
-								<li>Russian</li>
-								<li>Latin</li>
-							</ul>
-						</li>
-						<li class="canceled">Learn More Programming Languages
-							<ul>
-								<li>Lisp(?)</li>
-								<li>Scheme(?)</li>
-							</ul>
-						</li>
-						
-						<!--complete-->
-						<li class="complete">Be quantitatively closer to a degree</li>
-						<li class="complete">Learn to Sail</li>
-						<li class="complete">Go To Burning Man</li>
-						
-						<!--canceled-->
-						<li class="canceled">Get A <a href="http://oristand.co/cart/">oristand</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-3">
-					<h4>Business Goals</h4>
-					<ul>
-						<li>Sell Food Again</li>
-						<li>Grow Food</li>
-						<li>Maximize independence</li>
-            					<li>Start DJing again
-            						<ul>
-                						<li>Podcast</li>
-                						<li>Weekly gigs</li>
-              						</ul>
-            					</li>
-            					<li>Start a monthly podcast about doing good</li>
-						<li>Set up ancestry websites for people</li>
-						<li>Expand my aggregation tool to enable users to sign up and save their preferences, etc</li>
-            					<li>Build out Todo tool with features like past-due and editing existing entries</li>
-						<li>Throw fundraiser events for worthy causes</li>
-						<li>Customer service chat ops(?)</li>
-					</ul>
-					<ul class="canceled">
-						<li>Start a community news forum with an emphasis on local nonprofits</li>
-						<li>Address the issue of forcing status on power</li>
-					</ul>
-				</div>
-			</div>
-				
-			
-		</div>
-	
-		<!-- jQuery first, then Bootstrap JS. -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-	</body>
+<head>
+  <title>Accomplish</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="icon" type="image/jpg" href="https://cjtrowbridge.com/cj.jpg">
+  <style>
+    body{
+    padding-top: 2em;
+    font-size: 14px;
+    }
+    .complete,
+    .canceled,
+    shh{
+    display: none;
+    }
+    .complete{
+    color: green;
+    }
+    .canceled{
+    color: red;	
+    }
+    h1:hover shh,
+    h3:hover shh{
+    display: inline;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>
+        Accomplish
+        <shh><a href="javascript:void(0);" style="text-size: 1rem;" onclick="$('.complete').slideToggle();"><i class="material-icons" title="Show Completed">done</i></a></shh>
+        <shh><a href="javascript:void(0);" style="text-size: 1rem;" onclick="$('.canceled').slideToggle();"><i class="material-icons" title="Show Canceled">clear</i></a></shh>
+      </h3>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-3">
+      <h4>This/Each Week</h4>
+        <ul>
+          <li>Advance on <a href="https://www.hackerrank.com/domains" target="_blank">HackerRank</a></li>
+          <li>Read <a href="https://news.ycombinator.com/" target="_blank">Hacker News</a></li>
+          <li>Read <a href="https://www.indiehackers.com/businesses" target="_blank">Indie Hackers</a></li>
+          <li>Earn a quarter of my money freelancing</li>
+          <li>Eat Less, Eat Better, Drink More Water</li>
+          <li>Yoga</li>
+          <li>Watch a <a href="https://www.reddit.com/r/Documentaries/">documentary</a></li>
+          <li>Journal about goals each week</li>
+          <li>Blog post about each major area of focus
+          <ul>
+            <li>Investment</li>
+            <li>Book Reviews</li>
+            <li>Development</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <h4>This/Each Month</h4>
+      <ul>
+        <li>Read a book each month</li>
+        <li>
+          Volunteer
+          <ul>
+            <li>Stand Up Placer</li>
+          </ul>
+        </li>
+        <li>Play <a href="https://www.chesscademy.com/">Chess</a></li>
+        <li>Learn a new <a href="https://medium.com/marketing-and-entrepreneurship/21-best-places-to-learn-new-skills-every-day-722fdaf7530c#.peg4gey2d" target="_blank">skill</a></li>
+        <li>Try a new <a href="https://en.wikipedia.org/wiki/List_of_hobbies">hobby</a></li>
+        <li>Kayaking</li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <h4>This Year</h4>
+      <ul>
+        <li><b>Complete Undergrad</b></li>
+        <li>Become profitable with the fscrm platform</li>
+        <li><a href="https://hackr.io/" target="_blank">Learn More Programming Languages/Frameworks</a>
+          <ul>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Angular</li>
+            <li>Node</li>
+            <li>Python</li>
+          </ul>
+        </li>
+        <li>
+          Start a profitable new business
+          <ul>
+            <li>Mobile food sales</li>
+            <li>Throw fundraiser events for worthy causes</li>
+          </ul>
+        </li>
+        <li>More Amateur Radio</li>
+        <li>More Sailing</li>
+        <li>Build a tiny home</li>
+        <li>Maintain a buffer of six months of resources</li>
+        <li>Use machine learning to solve a problem</li>
+        <li>Use machine learning to make money</li>
+        <li><a href="http://www.seabreeze.com.au/forums/Land-Yacht-Sailing/Construction/Lake-Lefroy-Mini-landyacht-register/?page=1" target="_blank">Land Sailing</a></li>
+        <li>Learn Achery</li>
+        <li>Learn to shoot</li>
+        <li>Learn to Fly</li>
+        <li>Learn The Constellations</li>
+      </ul>
+
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <h4>Business Goals</h4>
+      <ul>
+        <li>Sell Food Again</li>
+        <li>Grow Food</li>
+        <li>Maximize independence</li>
+        <li>Start DJing again
+          <ul>
+            <li>Podcast</li>
+            <li>Weekly gigs</li>
+          </ul>
+        </li>
+        <li>Start a monthly podcast about doing good</li>
+        <li>Set up ancestry websites for people</li>
+        <li>Expand my aggregation tool to enable users to sign up and save their preferences, etc</li>
+        <li>Build out Todo tool with features like past-due and editing existing entries</li>
+        <li>Throw fundraiser events for worthy causes</li>
+        <li>Customer service chat ops(?)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery first, then Bootstrap JS. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
 </html>
